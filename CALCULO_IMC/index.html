@@ -21,43 +21,39 @@
                 <h1 id="titulo">CALCULADORA - IMC</h1>
 
                 <div class="input-box">
-                    <label for="weight">PESO EM KG</label>                    
+                    <label for="weight">PESO EM KG</label>             
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-scale"></i>
+                        <input type="number" id="weight" name="weight" required>
+                        <span>kg</span>
+                    </div>
                 </div>
-                <div class="input-field">
-                    <i class="fa-solid fa-weight-scale"></i>
-                    <input type="number" id="weight" required>
-                    <span>kg</span>
-                </div>
-                
+
                 <div class="input-box">
-                    <label for="height">ALTURA EM METROS</label>                    
+                    <label for="height">ALTURA EM METROS</label>                  
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler-vertical"></i>
+                        <input type="number" step="0.01" id="height" name="height" required>
+                        <span>m</span>
+                    </div>
                 </div>
-                <div class="input-field">
-                    <i class="fa-solid fa-ruler-vertical"></i>
-                    <input type="number" id="height" required>
-                    <span>m</span>
-                </div>
-                
+
                 <button id="calculate">CALCULAR</button>
             </form>
 
-            <div id="infos">
+            <div id="infos" class="hidden">
                 <div id="result">
                     <div id="bmi">
-                        <span id="value"></span>
                         <span>SEU IMC</span>
+                        <span id="value"></span>
                     </div>
                     <div id="description">
                         <span></span>
                     </div>
                 </div>
-                <div id="more_info">
-                    <a href="https://www.tjdft.jus.br/informacoes/programas-projetos-e-acoes/pro-vida/dicas-de-saude/pilulas-de-saude/o-que-o-indice-de-massa-corporal-imc-diz-sobre-sua-saude">MAIS INFORMAÇÕES SOBRE O IMC
-                        <i class="fa-solid fa-link"></i>
-                    </a>
-                </div>
             </div>
         </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>

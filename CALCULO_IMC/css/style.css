@@ -43,17 +43,18 @@ body {
     gap: 2rem;
 }
 
-#title {
+#titulo {
     font-size: 2.25rem;
     position: relative;
+    text-align: center;
 }
 
-#title::after {
+#titulo::after {
     position: absolute;
     content: '';
     background-color: #16a34a;
     width: 8rem;
-    height: 3px;
+    height: 1px;
     bottom: 0;
     left: 0;
     border-radius: 3px;
@@ -132,5 +133,46 @@ body {
 
 #bmi::last-child{
     font-size: 0.875rem;
+    color: #cbd5e1;
+
+}
+
+#description {
+    width: 15.5rem;
+}
+
+.hidden {
+ display: none;   
+}
+
+.normal {
+    color: #16a34a;
+}
+
+.attention {
+    color: red;
+}
+
+
+@media screen and (max-width: 1024px) {
+    
+    #img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #container {
+        width: 100%;
+        height: 100%;
+    }
+
+    #calculator {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        justify-content: center;
+    }
 }
 
